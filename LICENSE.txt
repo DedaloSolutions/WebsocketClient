@@ -1,0 +1,64 @@
+LICENSE FOR USE AND CONTRIBUTION
+Copyright (C) 2024 Dedalo Solutions. All rights reserved.
+
+1. Grant of License
+
+The use of this software is permitted only with the explicit written authorization of the author. Unauthorized use, distribution, or modification of the software or its source code, in whole or in part, is strictly prohibited.
+
+The granting of a license is subject to additional terms, which may include, but are not limited to:
+	•	A confidentiality agreement (NDA).
+	•	A specific license agreement detailing usage rights, which may be either lifetime or time-limited, depending on the case.
+
+2. Scope of Use
+
+The software may only be used for purposes explicitly agreed upon in writing with the author. Any use outside of these agreed terms is a violation of this license and will result in its immediate termination. This includes, but is not limited to:
+	•	Commercial use without authorization.
+	•	Redistribution or integration into third-party systems without prior approval.
+
+3. Contributions
+
+Contributions to this project are strictly regulated and require prior written approval by the author.
+	•	Approved Contributions: Once integrated, become the sole property of the author. Contributors acknowledge that they waive any claim to ownership, royalties, or attribution unless explicitly agreed otherwise.
+	•	Unsolicited Contributions: Any contributions submitted without prior approval will not be considered and confer no rights to the contributor.
+
+4. Modification and Source Code Use
+
+Modification of the software or any use of its source code requires explicit authorization from the author. Any modifications or derivative works must adhere to the following:
+	•	The author must review and approve the changes before any implementation, distribution, or deployment.
+	•	The modified software must retain clear acknowledgment of the original source, where permitted.
+
+Failure to comply with these conditions constitutes a breach of this license and will result in its immediate termination.
+
+5. Redistribution
+
+Redistribution of the software, including the source code, binaries, or any derivatives, is strictly prohibited unless explicitly authorized by the author. Authorized redistributions must comply with the terms set forth by the author and retain this license and any associated clauses.
+
+6. Confidentiality
+
+Unless explicitly stated otherwise, the software and its source code are confidential. Any user receiving access to the software must ensure it is not disclosed, shared, or made publicly available without the author’s explicit consent. Violation of this confidentiality will result in legal action.
+
+7. Termination of License
+
+The author reserves the right to terminate this license at any time if the user violates any of its terms or engages in unauthorized activities. Upon termination:
+	•	The user must immediately cease all use of the software.
+	•	All copies of the software, including backups, must be deleted.
+	•	Any licenses granted are revoked, and legal action may be pursued if necessary.
+
+8. Disclaimer of Warranties
+
+THIS SOFTWARE IS PROVIDED “AS IS” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THE AUTHOR MAKES NO GUARANTEES REGARDING THE PERFORMANCE OR RELIABILITY OF THE SOFTWARE.
+
+9. Limitation of Liability
+
+UNDER NO CIRCUMSTANCES SHALL THE AUTHOR BE LIABLE FOR ANY DAMAGES, INCLUDING BUT NOT LIMITED TO DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING FROM THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+10. Governing Law
+
+This license shall be governed by the laws of the jurisdiction in which the author resides. Any disputes arising under this license shall be resolved exclusively in the courts of that jurisdiction.
+
+11. Additional Terms
+
+The author reserves the right to impose additional terms and conditions for granting a license to use, modify, or distribute this software. These terms may include:
+	•	Confidentiality agreements (NDAs) to protect the software’s intellectual property.
+	•	Usage licenses that specify the terms and duration of use, which may be either lifetime or time-limited, depending on the agreement.
+	•	Specific obligations or restrictions tailored to the use case, which will be defined in the license agreement.
