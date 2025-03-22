@@ -42,9 +42,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
-  "optionalDependencies": {
-    "ws": "^8.18.1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/DedaloSolutions/WebsocketClient.git"

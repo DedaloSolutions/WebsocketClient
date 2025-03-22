@@ -4,38 +4,35 @@ export default class Client {
     private url?;
     private reconnectTimeout?;
     private socket?;
-    private handshakeData?;
-    private handshakeStatus;
-    private requestedDisconnected;
+    private handshake?;
+    private waitingForHandshake;
     private requestId;
     private pendingRequests;
     private handlers;
     /**
-     * Connette il WebSocketClass
+     * Connette il WebSocket
      * @param url L'url al quale connettersi. Obbligatorio alla prima connessione.
-     * @param allowReject Opzionale, indica se sollevare eccezioni in caso di errore. Default: false
      * @param reconnectTimeout Opzionale, indica il periodo di tempo in ms prima di ritentare la connessione. Se non specificato, mantiene l'ultimo valore inserito.
+     * @param handshake Opzionale, le informazioni da inviare all'handshake
      */
-    connect({ url, allowReject, handshakeData, reconnectTimeout }?: {
-        url?: string;
-        allowReject?: boolean;
-        handshakeData?: any;
+    connect(url?: string | undefined, { handshake, reconnectTimeout }?: {
+        handshake?: any;
         reconnectTimeout?: number | null;
     }): Promise<void>;
     /**
-     * Disconnette il WebSocketClass
+     * Disconnette il WebSocket
      * @param code Il codice di stato con il quale chiudere la connessione
      * @param reason La ragione per il quale la connessione è stata chiusa
      */
     disconnect(code?: number, reason?: string): Promise<void>;
     /**
-     * Ottiene lo stato attuale del WebSocketClass
+     * Ottiene lo stato attuale del WebSocket
      */
     get status(): 'connecting' | 'handshake' | 'open' | 'closing' | 'closed';
     /**
      * Funzione di supporto interna
      * Richiamata alla connessione o all'arrivo di ping o messaggi.
-     * Verifica che i ping del server arrivino e che, quindi, il WebSocketClass sia ancora connesso.
+     * Verifica che i ping del server arrivino e che, quindi, il WebSocket sia ancora connesso.
      */
     private checkHeartbeat;
     /**
@@ -73,7 +70,6 @@ export default class Client {
     on(type: 'open', handler: (event: Event) => void): void;
     on(type: 'error', handler: (event: Event) => void): void;
     on(type: 'close', handler: (event: CloseEvent) => void): void;
-    on(type: '*', handler: (type: string, data: any) => void): void;
     on(type: string, handler: (data: any) => any): void;
     /**
      * Rimuove un handler da un dato evento
@@ -83,7 +79,6 @@ export default class Client {
     off(type: 'open', handler?: (event: Event) => void): void;
     off(type: 'error', handler?: (event: Event) => void): void;
     off(type: 'close', handler?: (event: CloseEvent) => void): void;
-    off(type: '*', handler: (type: string, data: any) => void): void;
     off(type: string, handler?: (data: any) => any): void;
     /**
      * Funzione di supporto interna
